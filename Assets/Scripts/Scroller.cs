@@ -12,6 +12,8 @@ namespace GPG212_01
         private void FixedUpdate()
         {
             transform.position += new Vector3(moveSpeed, 0f, 0f);
+
+            moveSpeed += 0.00005f;
         }
     }
 }
