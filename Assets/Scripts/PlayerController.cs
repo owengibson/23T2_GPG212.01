@@ -10,7 +10,7 @@ namespace GPG212_01
         [Header("Parameters")]
         public Element playerElement = Element.WATER;
         public KeyCode jumpKey = KeyCode.Space;
-        public KeyCode switchModeKey = KeyCode.E;
+        public KeyCode switchElementKey = KeyCode.E;
         public KeyCode abilityKey = KeyCode.Return;
         [Space]
 
@@ -33,6 +33,10 @@ namespace GPG212_01
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
+
+            //Debug.Log((KeyCode)System.Enum.Parse(typeof(KeyCode), "Space"));
+            jumpKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("JumpKey"));
+            switchElementKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("SwitchElementKey"));
         }
 
         private void Update()
@@ -43,7 +47,7 @@ namespace GPG212_01
                 _isReadyToJump = true;
             }
 
-            if (Input.GetKeyDown(switchModeKey))
+            if (Input.GetKeyDown(switchElementKey))
             {
                 if (playerElement == Element.WATER)
                 {
