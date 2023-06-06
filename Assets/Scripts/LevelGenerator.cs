@@ -24,7 +24,7 @@ namespace GPG212_01
 
         private void SpawnLevelObstacle()
         {
-            float obstacleXOffset = Random.Range(10f, 20f);
+            float obstacleXOffset = Random.Range(12f, 20f);
 
             GameObject levelObstacle = levelObstacles[Random.Range(0, levelObstacles.Length)];
             GameObject lastObstacle = Instantiate(levelObstacle, new Vector3(_lastObstaclePosition.x + obstacleXOffset, levelObstacle.transform.position.y), Quaternion.identity);

@@ -351,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375667886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.95, y: -1.25, z: 0}
+  m_LocalPosition: {x: -35.7, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -938,10 +938,6 @@ MonoBehaviour:
   - {fileID: 4877545496623098552, guid: 9c306a6b83911aa42962d1c47c1af0fb, type: 3}
   - {fileID: 6135644958920088226, guid: 900fb573162472943896fcde933ee3f1, type: 3}
   - {fileID: 3643339307031800292, guid: d2a033368498c88449b02f85e5cb9fea, type: 3}
-  - {fileID: 6135644958920088226, guid: 900fb573162472943896fcde933ee3f1, type: 3}
-  - {fileID: 3643339307031800292, guid: d2a033368498c88449b02f85e5cb9fea, type: 3}
-  - {fileID: 6135644958920088226, guid: 900fb573162472943896fcde933ee3f1, type: 3}
-  - {fileID: 3643339307031800292, guid: d2a033368498c88449b02f85e5cb9fea, type: 3}
   player: {fileID: 1887741964}
   obstacleParent: {fileID: 1536255433}
 --- !u!1 &1887741964
@@ -1092,7 +1088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerElement: 1
   jumpKey: 32
-  switchModeKey: 101
+  switchElementKey: 101
   abilityKey: 13
   _jumpStrength: 550
   waterColor: {r: 0, g: 0.5372549, b: 1, a: 1}

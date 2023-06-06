@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 35428451548193406}
   - component: {fileID: 35428451548193401}
   - component: {fileID: 35428451548193407}
+  - component: {fileID: 3417205938022516325}
   m_Layer: 3
   m_Name: Obstacle01
   m_TagString: Obstacle
@@ -112,6 +113,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3417205938022516325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35428451548193400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4bd6a84e0128754d8caf1f20a5c3111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleElement: 0
+  isAvoidable: 1
+  fireColor: {r: 0.75686276, g: 0.4, b: 0, a: 1}
+  waterColor: {r: 0, g: 0.2939696, b: 0.5471698, a: 1}
 --- !u!1 &8843711137003131941
 GameObject:
   m_ObjectHideFlags: 0
