@@ -14,6 +14,7 @@ namespace GPG212_01
 
         private Vector3 _lastObstaclePosition = Vector3.zero;
         private float _minSpawnDistance = 10f;
+        private float _maxSpawnDistance = 20f;
 
         private void Update()
         {
@@ -23,11 +24,12 @@ namespace GPG212_01
             }
 
             _minSpawnDistance += 0.001f;
+            _maxSpawnDistance += 0.001f;
         }
 
         private void SpawnLevelObstacle()
         {
-            float obstacleXOffset = Random.Range(_minSpawnDistance, 20f);
+            float obstacleXOffset = Random.Range(_minSpawnDistance, _maxSpawnDistance);
 
             GameObject levelObstacle = levelObstacles[Random.Range(0, levelObstacles.Length)];
             GameObject lastObstacle = Instantiate(levelObstacle, new Vector3(_lastObstaclePosition.x + obstacleXOffset, levelObstacle.transform.position.y), Quaternion.identity);

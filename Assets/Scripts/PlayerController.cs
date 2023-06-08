@@ -34,7 +34,6 @@ namespace GPG212_01
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
 
-            //Debug.Log((KeyCode)System.Enum.Parse(typeof(KeyCode), "Space"));
             jumpKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("JumpKey"));
             switchElementKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("SwitchElementKey"));
         }
@@ -53,11 +52,13 @@ namespace GPG212_01
                 {
                     playerElement = Element.FIRE;
                     _spriteRenderer.color = fireColor;
+                    EventManager.PlayAudio?.Invoke("SwitchToFire");
                 }
                 else
                 {
                     playerElement = Element.WATER;
                     _spriteRenderer.color = waterColor;
+                    EventManager.PlayAudio?.Invoke("SwitchToWater");
                 }
             }
         }

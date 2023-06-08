@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace GPG212_01
+namespace EasyAudioSystem
 {
     [System.Serializable]
     public class Sound

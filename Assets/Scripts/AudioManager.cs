@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GPG212_01
+namespace EasyAudioSystem
 {
     public class AudioManager : MonoBehaviour
     {

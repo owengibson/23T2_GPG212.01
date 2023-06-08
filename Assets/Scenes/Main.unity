@@ -219,6 +219,16 @@ MonoBehaviour:
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
+  - name: SwitchToFire
+    clip: {fileID: 8300000, guid: 251895d7271e3c744a9f5a2c63d85cc3, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+  - name: SwitchToWater
+    clip: {fileID: 8300000, guid: ebe572974f2dd864a8c93f00b635715a, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
   mainStart:
     name: 
     clip: {fileID: 0}
