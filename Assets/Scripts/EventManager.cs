@@ -8,5 +8,6 @@ namespace GPG212_01
     public class EventManager : MonoBehaviour
     {
         public static Action OnGameOver;
+        public static Action<string> PlayAudio;
     }
 }

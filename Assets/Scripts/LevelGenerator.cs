@@ -13,6 +13,7 @@ namespace GPG212_01
         [SerializeField] private Transform obstacleParent;
 
         private Vector3 _lastObstaclePosition = Vector3.zero;
+        private float _minSpawnDistance = 10f;
 
         private void Update()
         {
@@ -20,11 +21,13 @@ namespace GPG212_01
             {
                 SpawnLevelObstacle();
             }
+
+            _minSpawnDistance += 0.001f;
         }
 
         private void SpawnLevelObstacle()
         {
-            float obstacleXOffset = Random.Range(12f, 20f);
+            float obstacleXOffset = Random.Range(_minSpawnDistance, 20f);
 
             GameObject levelObstacle = levelObstacles[Random.Range(0, levelObstacles.Length)];
             GameObject lastObstacle = Instantiate(levelObstacle, new Vector3(_lastObstaclePosition.x + obstacleXOffset, levelObstacle.transform.position.y), Quaternion.identity);

@@ -67,6 +67,7 @@ namespace GPG212_01
             if (_isReadyToJump)
             {
                 _rigidbody2D.AddRelativeForce(Vector2.up * _jumpStrength);
+                EventManager.PlayAudio?.Invoke("Jump");
                 _isReadyToJump = false;
             }
 
